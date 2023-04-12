@@ -34,3 +34,5 @@ website/i18n/*
 tsconfig.vitest-temp.json
 
 .vscode
+
+.idea/
