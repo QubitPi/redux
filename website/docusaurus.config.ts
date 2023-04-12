@@ -8,10 +8,10 @@ const config: Config = {
   title: 'Redux',
   tagline:
     'A JS library for predictable and maintainable global state management',
-  url: 'https://redux.js.org',
-  baseUrl: '/',
+  url: 'https://QubitPi.github.io/',
+  baseUrl: '/redux/',
   favicon: 'img/favicon/favicon.ico',
-  organizationName: 'reduxjs',
+  organizationName: 'QubitPi',
   projectName: 'redux',
   themes: [require.resolve('@getcanary/docusaurus-theme-search-pagefind')],
   themeConfig: {
