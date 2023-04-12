@@ -7,10 +7,10 @@ const {
 module.exports = {
   title: 'Redux',
   tagline: 'A Predictable State Container for JS Apps',
-  url: 'https://redux.js.org',
-  baseUrl: '/',
+  url: 'https://QubitPi.github.io/',
+  baseUrl: '/redux/',
   favicon: 'img/favicon/favicon.ico',
-  organizationName: 'reduxjs',
+  organizationName: 'QubitPi',
   projectName: 'redux',
   themeConfig: {
     image: 'img/redux-logo-landscape.png',
