@@ -21,6 +21,30 @@ make your Redux code better.
 
 :::tip
 
+Overall, both Redux and Redux Toolkit are popular libraries for managing state in JavaScript applications. While Redux 
+has a large and active community and support for middleware, it can be difficult to learn and requires a lot of 
+boilerplate code.
+
+Redux Toolkit, on the other hand, provides a simplified, opinionated approach to using Redux, which can make it easier 
+for developers to get started with the library. However, it is a relatively new library and may not have the same level 
+of community support and resources as Redux.
+
+While Redux Toolkit simplifies the Redux development process, there are still cases where using plain Redux might be 
+preferable:
+
+- Advanced Use Cases: If we have complex state management needs, such as middleware, custom enhancers, or manual control 
+  over store creation, plain Redux gives us more flexibility.
+- Existing Redux Codebase: If we're already using Redux in our project and have an established codebase, migrating to 
+  Redux Toolkit might require more effort and may not be necessary unless we encounter specific pain points.
+
+Ultimately, the decision to use Redux or Redux Toolkit will depend on the specific needs of the application and the 
+preferences of the development team. Both libraries have their own strengths and weaknesses, and developers should weigh
+these carefully when deciding which library to use.
+
+:::
+
+:::tip
+
 See these pages to learn how to use "modern Redux" with Redux Toolkit:
 
 - [**The "Redux Essentials" tutorial**](../tutorials/essentials/part-1-overview-concepts.md), which teaches "how to use Redux, the right way" with Redux Toolkit for real-world apps,
