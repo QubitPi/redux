@@ -3,21 +3,17 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 ---
-name: Documentation Release
+name: Documentation CI/CD
 
 'on':
+  pull_request:
   push:
     branches:
       - master
 
 jobs:
-  test:
-    uses: ./.github/workflows/doc-test.yml
-    secrets: inherit
-
-  deploy-documentation:
+  documentation-ci-cd:
     name: Deploy Documentation to GitHub Pages
-    needs: test
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -32,10 +28,10 @@ jobs:
       - name: Build documentation
         run: yarn build
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/master'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: website/build
           user_name: QubitPi
-          user_email: jack20191124@proton.me
-
+          user_email: jack20191124@gmail.com
