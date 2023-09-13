@@ -102,6 +102,16 @@ Redux itself does not care about how your application's folders and files are st
 
 Because of this, **we recommend that most applications should structure files using a "feature folder" approach** (all files for a feature in the same folder). Within a given feature folder, **the Redux logic for that feature should be written as a single "slice" file**, preferably using the Redux Toolkit `createSlice` API. (This is also known as the ["ducks" pattern](https://github.com/erikras/ducks-modular-redux)). While older Redux codebases often used a "folder-by-type" approach with separate folders for "actions" and "reducers", keeping related logic together makes it easier to find and update that code.
 
+:::info
+
+It is important to know that "slice" is a concept in [redux-toolkit](https://qubitpi.github.io/redux-toolkit/). It does
+the same thing as the ["ducks" pattern](https://github.com/erikras/ducks-modular-redux) but in a more "automatic" way.
+Slice v.s Ducks is like [create-react-app](https://create-react-app.dev/) v.s. React project by hand. 
+
+![Should I use slice or ducks](/img/style-guide/slice-vs-ducks.png)
+
+:::
+
 <DetailedExplanation title="Detailed Explanation: Example Folder Structure">
 An example folder structure might look something like:
 
