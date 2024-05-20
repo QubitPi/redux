@@ -8,8 +8,8 @@ module.exports = {
   title: 'Redux',
   tagline:
     'A JS library for predictable and maintainable global state management',
-  url: 'https://QubitPi.github.io/',
-  baseUrl: '/redux/',
+  url: 'https://redux.qubitpi.org/',
+  baseUrl: '/',
   favicon: 'img/favicon/favicon.ico',
   organizationName: 'QubitPi',
   projectName: 'redux',
